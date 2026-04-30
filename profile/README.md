@@ -1,25 +1,25 @@
 # Slughook
 
-**See, debug, and replay webhooks instantly.**
+**The fastest way to inspect, debug, and replay webhooks — in real time.**
 
-Slughook is a high-performance webhook gateway that lets you capture, inspect, and replay events in real time — without losing a single request.
+Slughook is a high-performance webhook gateway built for developers who need full visibility and control over event-driven systems — without losing a single request.
 
 ---
 
-## What is Slughook?
+## Overview
 
-Debugging webhooks is painful.
+Webhook debugging shouldn’t feel like guesswork.
 
-You don’t know what was sent. Logs are incomplete. And reproducing failures means waiting for events to happen again.
+Missing logs. Incomplete payloads. Non-reproducible failures.
 
-Slughook solves this by acting as a gateway between your webhook providers and your backend — capturing every event, streaming it live, and letting you replay it anytime.
+Slughook eliminates all of that by acting as a reliable gateway between your webhook providers and your backend — capturing every event, streaming it live, and enabling instant replay on demand.
 
 ```
 Stripe / GitHub / Slack / Shopify
            │
            ▼
      ┌─────────────┐
-     │  Slughook   │  ← capture · inspect · replay
+     │  Slughook   │  ← Observe · Debug · Replay
      └─────────────┘
            │
            ▼
@@ -28,42 +28,59 @@ Stripe / GitHub / Slack / Shopify
 
 ---
 
-## Core Capabilities
+## Key Features
 
-* **Full visibility** — Inspect headers, payloads, and responses in one place
-* **Instant replay** — Replay any webhook with one click (edit payloads, test edge cases)
-* **Real-time stream** — Watch events arrive live, no refresh needed
-* **Reliable delivery** — Queue-based architecture ensures zero data loss
-* **Signature verification** — Validate webhook signatures out of the box
-* **Metrics & alerts** — Track delivery rates and get notified when things break
+### **Complete Observability**
+
+Inspect headers, payloads, and responses in a single unified interface — no more fragmented logs.
+
+### **One-Click Replay**
+
+Replay any event instantly. Modify payloads, simulate edge cases, and debug failures without waiting.
+
+### **Live Event Streaming**
+
+Watch webhook traffic in real time with zero refresh. Stay in sync with your system as events happen.
+
+### **Guaranteed Delivery**
+
+Queue-based architecture ensures durability and zero data loss, even under heavy load.
+
+### **Built-in Signature Verification**
+
+Automatically validate incoming webhook signatures from supported providers.
+
+### **Metrics & Alerting**
+
+Monitor delivery performance and get notified when failures occur — before they impact users.
 
 ---
 
 ## Use Cases
 
-* Debug webhooks from Stripe, GitHub, Slack, Shopify, and more
-* Replay failed events without waiting for retries
+* Debug integrations with Stripe, GitHub, Slack, Shopify, and more
+* Replay failed events without relying on provider retries
 * Monitor production webhook traffic in real time
-* Validate payloads and safely test edge cases
-* Reduce downtime by catching failures early
+* Validate payloads and test edge cases safely
+* Reduce downtime by detecting and fixing issues early
 
 ---
 
-## Getting Started
+## Quick Start
 
-Create your first endpoint in seconds:
+Get up and running in seconds:
 
 ```bash
 slughook create endpoint
 ```
 
-Stream incoming events:
+Stream events live:
 
 ```bash
 slughook tail
 ```
 
-Replay any failed event:
+Replay any event:
 
 ```bash
 slughook replay <event_id>
@@ -73,20 +90,20 @@ slughook replay <event_id>
 
 ## Platform
 
-Slughook is a fully managed, hosted service designed for reliability and scale:
+Slughook is a fully managed platform designed for scale, reliability, and developer productivity:
 
-* High-availability event processing
-* Secure webhook ingestion and delivery
+* High-availability event ingestion and processing
+* Secure, scalable webhook delivery
 * Built-in observability and replay tooling
-* Designed for both solo developers and teams
+* Designed for individuals, startups, and teams
 
 ---
 
-## Links
+## Resources
 
-* 🌐 Website — https://slughook.com
-* 📚 Documentation — https://docs.slughook.com
-* 📊 Status — https://status.slughook.com
+* 🌐 Website — [https://slughook.com](https://slughook.com)
+* 📚 Documentation — [https://docs.slughook.com](https://docs.slughook.com)
+* 📊 Status — [https://status.slughook.com](https://status.slughook.com)
 * 💬 Support — [support@slughook.com](mailto:support@slughook.com)
 
 ---
@@ -94,8 +111,8 @@ Slughook is a fully managed, hosted service designed for reliability and scale:
 ## Notes
 
 Slughook is a proprietary platform.
-This organization hosts supporting tools, SDKs, and public resources related to the product.
+This repository contains supporting tools, SDKs, and public resources.
 
 ---
 
-<sub>Built for developers who move fast.</sub>
+<sub>Built for developers who ship fast — and debug faster.</sub>
